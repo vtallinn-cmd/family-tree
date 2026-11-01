@@ -25,13 +25,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
-
+          node-version: 24     
       - name: Install Dependencies
         run: npm install
 
       - name: Install Quartz Plugins
         run: npx quartz plugin install
+
+      - name: Install Quartz Theme
+        run: npx quartz theme install default
+
+      - name: Build Quartz
+        run: npx quartz build
 
       - name: Build Quartz
         run: npx quartz build
