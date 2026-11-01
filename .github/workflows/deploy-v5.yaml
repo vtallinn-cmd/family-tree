@@ -32,9 +32,6 @@ jobs:
       - name: Install Quartz Plugins
         run: npx quartz plugin install
 
-      - name: Install Quartz Theme
-        run: npx quartz theme install default
-
       - name: Build Quartz
         run: npx quartz build
 
