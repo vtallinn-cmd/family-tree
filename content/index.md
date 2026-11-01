@@ -1,7 +1,8 @@
 ---
-title: Welcome to Quartz
+title: Кто ищет, тот найдет!
 ---
+Кто хочет, тот получит
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
- 
+Если ты блуждаешь, это не значит что ты потерялся
+                                      J.R.R. Tolkie
+
