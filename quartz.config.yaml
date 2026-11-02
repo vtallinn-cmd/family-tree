@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: "Кто ищет, тот найдет!"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -12,7 +12,7 @@ configuration:
     - private
     - templates
     - .obsidian
-    - 00_?????????/**
+    - "**/00_Служебное/**"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
