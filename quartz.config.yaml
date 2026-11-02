@@ -160,6 +160,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      title: "Содержание сайта"
     layout:
       position: left
       priority: 50
