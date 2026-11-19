@@ -1,6 +1,35 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Единый шрифт без засечек для заголовков и текста
+:root {
+  --headerFont: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  --bodyFont: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-title,
+.article-title,
+.explorer button,
+.folder-container div > a,
+.folder-container div > button,
+.section h3 {
+  font-family: var(--headerFont) !important;
+}
+
 body[data-slug="index"] .content-meta {
   display: none;
+}
+
+// Скрывает строку «... items under this folder.» на страницах разделов
+.page-listing > p {
+  display: none;
+}
+
+// Скрывает столбец с датами в списках разделов и выравнивает пункты по левому краю
+.page-listing .section .meta {
+  display: none;
+}
+
+.page-listing .section {
+  grid-template-columns: 1fr;
 }

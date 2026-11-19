@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: ru-RU
   baseUrl: vtallinn-cmd.github.io/family-tree
   ignorePatterns:
     - private
@@ -17,8 +17,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Inter
+      body: Inter
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -189,7 +189,7 @@ plugins:
       position: beforeBody
       priority: 10
   - source: "@quartz-community/content-meta"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
@@ -255,12 +255,16 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
         - aliases
-      excludedProperties: []
+      excludedProperties:
+        - title
+        - password
+        - modified
+        - created
       hidePropertiesView: false
       delimiters: ---
       language: yaml
